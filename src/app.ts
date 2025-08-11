@@ -4,7 +4,6 @@ import cors from "cors";
 import globalErrorHandler from "./middleware/globalErrorHandler";
 import authRouter from "./auth/authRoutes";
 import cookieParser from "cookie-parser";
-import discussionRouter from "./discussion/discussionRoute";
 import http from "http";
 import { Server } from "socket.io";
 import aiTutorRouter from "./aiTutor/aiTutorRoutes";
@@ -53,3 +52,4 @@ app.use("/api/v1/merge-all", mergeAllRouter);
 app.use(globalErrorHandler);
 
 export { server };
+
